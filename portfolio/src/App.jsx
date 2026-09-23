@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Flagship from "./components/Flagship";
@@ -8,6 +9,7 @@ import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
 import { Contact, Footer } from "./components/Contact";
 import { TraceDivider } from "./components/Shared";
+import Loader from "./components/Loader";
 import useReveal from "./useReveal";
 
 function BoardBackground() {
@@ -44,25 +46,29 @@ function BoardBackground() {
 
 export default function App() {
   useReveal();
+  const [loading, setLoading] = useState(true);
 
   return (
     <>
-      <BoardBackground />
-      <Navbar />
-      <Hero />
-      <Flagship />
-      <TraceDivider dots={[590]} />
-      <About />
-      <TraceDivider dots={[300, 880]} />
-      <Skills />
-      <TraceDivider dots={[590]} />
-      <Projects />
-      <TraceDivider dots={[590]} />
-      <Experience />
-      <TraceDivider dots={[590]} />
-      <Certifications />
-      <Contact />
-      <Footer />
+      {loading && <Loader onDone={() => setLoading(false)} />}
+      <div className={`transition-opacity duration-700 ${loading ? "opacity-0" : "opacity-100"}`}>
+        <BoardBackground />
+        <Navbar />
+        <Hero />
+        <Flagship />
+        <TraceDivider dots={[590]} />
+        <About />
+        <TraceDivider dots={[300, 880]} />
+        <Skills />
+        <TraceDivider dots={[590]} />
+        <Projects />
+        <TraceDivider dots={[590]} />
+        <Experience />
+        <TraceDivider dots={[590]} />
+        <Certifications />
+        <Contact />
+        <Footer />
+      </div>
     </>
   );
 }

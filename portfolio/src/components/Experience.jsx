@@ -11,14 +11,21 @@ function Timeline({ items }) {
             "repeating-linear-gradient(180deg, #D08A50 0 8px, transparent 8px 14px)",
         }}
       />
-      {items.map((item, i) => (
-        <div key={item.title} className={`relative ${i !== items.length - 1 ? "mb-8" : ""}`}>
-          <span className="absolute -left-8 top-1.5 w-2.5 h-2.5 rounded-full bg-bg border-2 border-signal" />
-          <div className="font-plex text-xs text-copper tracking-wide mb-1">{item.date}</div>
-          <div className="font-mono text-[16.5px] mb-1">{item.title}</div>
-          <div className="text-sm text-inkDim">{item.sub}</div>
-        </div>
-      ))}
+      {items.map((item, i) => {
+        return (
+          <div
+            key={item.title}
+            className={`group relative pl-1 -ml-1 rounded-lg transition-all duration-300 hover:pl-3 hover:bg-signal/[0.04] ${
+              i !== items.length - 1 ? "mb-8" : ""
+            }`}
+          >
+            <span className="absolute -left-8 top-1.5 w-2.5 h-2.5 rounded-full bg-bg border-2 border-signal transition-shadow duration-300 group-hover:shadow-[0_0_12px_#5FE0CB]" />
+            <div className="font-plex text-xs text-copper tracking-wide mb-1">{item.date}</div>
+            <div className="font-mono text-[16.5px] mb-1">{item.title}</div>
+            <div className="text-sm text-inkDim">{item.sub}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }

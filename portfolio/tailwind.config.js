@@ -41,6 +41,23 @@ export default {
         flow: {
           to: { strokeDashoffset: -40 },
         },
+        spinSlow: {
+          to: { transform: "rotate(360deg)" },
+        },
+        pulseGlow: {
+          "0%,100%": { opacity: 0.35, transform: "scale(1)" },
+          "50%": { opacity: 0.7, transform: "scale(1.08)" },
+        },
+        blobDrift: {
+          "0%,100%": { transform: "translate(0,0) scale(1)" },
+          "50%": { transform: "translate(30px,-20px) scale(1.08)" },
+        },
+        particleFloat: {
+          "0%": { transform: "translateY(0) translateX(0)", opacity: 0 },
+          "10%": { opacity: 0.6 },
+          "90%": { opacity: 0.6 },
+          "100%": { transform: "translateY(-140px) translateX(10px)", opacity: 0 },
+        },
       },
       animation: {
         fadeUp: "fadeUp .8s ease both",
@@ -48,6 +65,10 @@ export default {
         blink: "blink 2.4s ease-in-out infinite",
         bob: "bob 2.4s ease-in-out infinite",
         flow: "flow 3.2s linear infinite",
+        "spin-slow": "spinSlow 6s linear infinite",
+        pulseGlow: "pulseGlow 3s ease-in-out infinite",
+        blobDrift: "blobDrift 14s ease-in-out infinite",
+        particleFloat: "particleFloat 8s linear infinite",
       },
     },
   },

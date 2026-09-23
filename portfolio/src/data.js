@@ -3,17 +3,19 @@
 
 export const flagshipProjects = [
   {
-    code: "SB",
+    code: "LK",
     iconGradient: "linear-gradient(135deg,#5FE0CB,#3AA894)",
     status: "Live in production",
     statusColor: "text-signal",
-    title: "SL Bus Tracker",
+    title: "Lankora",
     description:
-      "Helping Sri Lankans find bus routes, fares, and timings across all 25 districts — with live Google Maps integration and an AI chatbot that answers route questions instantly.",
-    tags: ["React.js", "Google Maps API", "Groq AI Chatbot"],
-    link: "https://slbustracker.vercel.app",
+      "A complete Sri Lanka travel + bus companion — 257 verified routes across all 25 districts, an AI travel assistant, live user reviews, multi-stop transfer planning, and a Book page for buses, trains, and hotels. The redesigned evolution of my original SL Bus Tracker project.",
+    tags: ["React.js", "Google Maps API", "Groq AI Chatbot", "PWA"],
+    link: "https://lankora-lk.vercel.app",
     linkLabel: "Open Live Site",
-    bars: [70, 45, 85, 30],
+    screenshot: "/screenshots/lankora.png",
+    logo: "/logos/lankora.png",
+    bars: [75, 55, 90, 40],
   },
   {
     code: "TB",
@@ -26,59 +28,112 @@ export const flagshipProjects = [
     tags: ["React.js", "Node.js", "MongoDB Atlas", "JWT Auth"],
     link: "https://timebank-app.vercel.app",
     linkLabel: "Open Live Site",
+    screenshot: "/screenshots/timebank.png",
+    logo: "/logos/timebank.png",
     bars: [60, 80, 40, 55],
   },
   {
-    code: "LM",
-    iconGradient: "linear-gradient(135deg,#6C63FF,#F72585)",
-    status: "In active development",
-    statusColor: "text-danger",
-    title: "Lumora",
+    code: "SK",
+    iconGradient: "linear-gradient(135deg,#5FE0CB,#7A5334)",
+    status: "Live in production",
+    statusColor: "text-signal",
+    title: "Skilloop",
     description:
-      '"Learn in moments" — an education-only social platform with an Instagram/TikTok-style feed. Built as a React PWA with a custom indigo-and-pink glassmorphism identity.',
-    tags: ["React.js", "PWA", "Firebase Auth", "Cloudflare R2"],
-    link: null,
-    linkLabel: null,
-    bars: [50, 75, 65, 35],
+      "An AI mentor platform that teaches by generating real mini-projects, Socratic style — 4 specialized AI agents guide learners through hands-on practice instead of passive lessons.",
+    tags: ["MERN Stack", "Groq (LLaMA 3.3 70B)", "AI Agents", "JWT Auth"],
+    link: "https://skilloop-iota.vercel.app",
+    linkLabel: "Open Live Site",
+    screenshot: "/screenshots/skilloop.png",
+    logo: null,
+    bars: [65, 85, 50, 70],
+  },
+  {
+    code: "VY",
+    iconGradient: "linear-gradient(135deg,#6C63FF,#F72585)",
+    status: "Live in production",
+    statusColor: "text-signal",
+    title: "Veysh",
+    description:
+      "A browser-based AR project — no install needed. Hero gesture controls (Spider-Man's web-shot, Iron Man's repulsor blast, Thor's lightning, and more) powered by real-time hand tracking, straight in the browser.",
+    tags: ["React.js", "MediaPipe", "Canvas API", "Framer Motion"],
+    link: "https://veysh.vercel.app",
+    linkLabel: "Open Live Site",
+    screenshot: "/screenshots/veysh.png",
+    logo: null,
+    bars: [55, 70, 85, 45],
   },
 ];
 
 export const otherProjects = [
   {
-    partNo: "CA-EC01",
-    status: "live",
-    title: "CodeAlpha E-commerce Store",
+    partNo: "LUM-01",
+    status: "dev",
+    linkLabel: "Open Live Site",
+    title: "Lumora",
     description:
-      "Full-stack e-commerce platform built during the CodeAlpha internship — product listings, cart, and checkout, with secure authentication.",
-    tags: ["MERN Stack", "Vite", "JWT Auth"],
-    link: "https://github.com/ihamjth11/CodeAlpha_EcommerceStore",
+      '"Learn in moments" — an education-only social platform with an Instagram/TikTok-style feed. Custom indigo-and-pink glassmorphism identity, live and actively growing.',
+    tags: ["React.js", "PWA", "Firebase Auth", "Cloudinary"],
+    link: "https://lumora-orpin-tau.vercel.app",
   },
   {
-    partNo: "CA-SM01",
-    status: "live",
-    title: "CodeAlpha Social Media Platform",
+    partNo: "TS-01",
+    status: "dev",
+    linkLabel: "View on GitHub",
+    title: "TrapSight",
     description:
-      "A full-stack social platform with user profiles, posts, and interactions — built on the same MERN foundation as the e-commerce task.",
-    tags: ["MERN Stack", "JWT Auth"],
-    link: "https://github.com/ihamjth11/CodeAlpha_SocialMedia",
+      "An AI + Cybersecurity phishing URL detector — Chrome extension that scans any URL in real time and explains WHY it's flagged. Random Forest model at 96.94% accuracy on 11,430 URLs.",
+    tags: ["Python", "Scikit-learn", "Flask API", "Chrome Extension"],
+    link: "https://github.com/ihamjth11/TrapSight",
+  },
+  {
+    partNo: "IAI-01",
+    status: "live",
+    linkLabel: "View on GitHub",
+    title: "Multi-Agent Internship Finder AI",
+    description:
+      "A Python multi-agent system — Researcher, Matcher, and Reporter agents work together using Google Gemini to find and rank internships that fit a given profile.",
+    tags: ["Python", "Gemini API", "Multi-Agent AI"],
+    link: "https://github.com/ihamjth11/internship-agent-ai",
   },
   {
     partNo: "LKL-01",
     status: "dev",
+    linkLabel: "View on GitHub",
     title: "LankaLens",
     description:
-      "A civic issue reporting platform — people photograph public problems, and AI classifies them by type and severity on a live map.",
+      "A civic issue reporting platform — people photograph public problems, and AI classifies them by type and severity on a live map. ~90% complete.",
     tags: ["React", "Flask", "Gemini API"],
     link: null,
   },
   {
     partNo: "MOS-01",
     status: "dev",
+    linkLabel: "View on GitHub",
     title: "MindOS",
     description:
       "An AI Life Operating System concept — goal tracking, habit tracking, and AI coaching in one dashboard prototype.",
     tags: ["React", "Tailwind", "Groq API"],
     link: null,
+  },
+  {
+    partNo: "CA-EC01",
+    status: "live",
+    linkLabel: "View on GitHub",
+    title: "CodeAlpha E-commerce Store",
+    description:
+      "Full-stack e-commerce platform — product listings, cart, and checkout, with secure authentication.",
+    tags: ["MERN Stack", "Vite", "JWT Auth"],
+    link: "https://github.com/ihamjth11/CodeAlpha_EcommerceStore",
+  },
+  {
+    partNo: "CA-SM01",
+    status: "live",
+    linkLabel: "View on GitHub",
+    title: "CodeAlpha Social Media Platform",
+    description:
+      "A full-stack social platform with user profiles, posts, and interactions — built on the same MERN foundation as the e-commerce task.",
+    tags: ["MERN Stack", "JWT Auth"],
+    link: "https://github.com/ihamjth11/CodeAlpha_SocialMedia",
   },
 ];
 
@@ -92,7 +147,7 @@ export const iotProjects = [
     partNo: "IOT-02",
     title: "Smart Home Control & Weather Monitoring System",
     description:
-      "Clap-triggered home automation using Arduino Uno and Adafruit IO.Real-time temperature, humidity, and air-quality tracking with ESP8266, DHT11, and MQ-135 sensors on a live LCD display.",
+      "Clap-triggered home automation using Arduino Uno and Adafruit IO. Real-time temperature, humidity, and air-quality tracking with ESP8266, DHT11, and MQ-135 sensors on a live LCD display.",
   },
   {
     partNo: "IOT-03",
@@ -102,11 +157,6 @@ export const iotProjects = [
 ];
 
 export const experience = [
-  {
-    date: "JUL 2026 — PRESENT",
-    title: "Full Stack Development Intern",
-    sub: "CodeAlpha · Remote",
-  },
   {
     date: "2024 — 2025",
     title: "Freelance Designer",
@@ -157,6 +207,16 @@ export const skillBanks = [
   {
     label: "Backend & Data",
     items: ["Node.js & Express.js", "MongoDB Atlas", "JWT Authentication", "REST APIs", "Python · Java"],
+  },
+  {
+    label: "Currently Growing",
+    items: [
+      "AI & Machine Learning",
+      "Cybersecurity",
+      "Cloud (AWS · GCP · Azure)",
+      "DevOps (Docker · CI/CD · Linux)",
+      "Next.js",
+    ],
   },
   {
     label: "Hardware & Tools",
