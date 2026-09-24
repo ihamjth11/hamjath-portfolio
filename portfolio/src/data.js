@@ -159,6 +159,11 @@ export const iotProjects = [
 export const experience = [
   {
     date: "2024 — 2025",
+    title: "Student Union President",
+    sub: "BCAS Kandy Campus",
+  },
+  {
+    date: "2024 — 2025",
     title: "Freelance Designer",
     sub: "Home · Remote",
   },

@@ -61,11 +61,11 @@ export default function Hero() {
       <HeroBackground speed={bgParallax} />
 
       <div style={{ transform: `translateY(${photoParallax}px)` }}>
-        <div className="relative w-[184px] h-[184px] mb-9 mx-auto animate-floatIn">
-          <div className="absolute -inset-7 rounded-full bg-signal/25 blur-2xl animate-pulseGlow pointer-events-none" />
+        <div className="relative w-[224px] h-[224px] mb-9 mx-auto animate-floatIn">
+          <div className="absolute -inset-8 rounded-full bg-signal/25 blur-2xl animate-pulseGlow pointer-events-none" />
 
           <div
-            className="absolute -inset-2 rounded-full animate-spin-slow pointer-events-none"
+            className="absolute -inset-2.5 rounded-full animate-spin-slow pointer-events-none"
             style={{
               background:
                 "conic-gradient(from 0deg, transparent 0%, #5FE0CB 15%, transparent 30%, #D08A50 55%, transparent 70%, #5FE0CB 90%, transparent 100%)",
@@ -75,12 +75,12 @@ export default function Hero() {
             }}
           />
 
-          <div className="absolute -inset-3.5 rounded-full border border-copper/35 pointer-events-none" />
+          <div className="absolute -inset-4 rounded-full border border-copper/35 pointer-events-none" />
 
-          <span className="absolute w-2.5 h-2.5 rounded-full bg-copper shadow-[0_0_10px_#D08A50] top-1/2 -left-5 -translate-y-1/2 animate-blink" />
-          <span className="absolute w-2.5 h-2.5 rounded-full bg-copper shadow-[0_0_10px_#D08A50] top-1/2 -right-5 -translate-y-1/2 animate-blink [animation-delay:.6s]" />
-          <span className="absolute w-2.5 h-2.5 rounded-full bg-copper shadow-[0_0_10px_#D08A50] left-1/2 -top-5 -translate-x-1/2 animate-blink [animation-delay:1.2s]" />
-          <span className="absolute w-2.5 h-2.5 rounded-full bg-copper shadow-[0_0_10px_#D08A50] left-1/2 -bottom-5 -translate-x-1/2 animate-blink [animation-delay:1.8s]" />
+          <span className="absolute w-3 h-3 rounded-full bg-copper shadow-[0_0_10px_#D08A50] top-1/2 -left-6 -translate-y-1/2 animate-blink" />
+          <span className="absolute w-3 h-3 rounded-full bg-copper shadow-[0_0_10px_#D08A50] top-1/2 -right-6 -translate-y-1/2 animate-blink [animation-delay:.6s]" />
+          <span className="absolute w-3 h-3 rounded-full bg-copper shadow-[0_0_10px_#D08A50] left-1/2 -top-6 -translate-x-1/2 animate-blink [animation-delay:1.2s]" />
+          <span className="absolute w-3 h-3 rounded-full bg-copper shadow-[0_0_10px_#D08A50] left-1/2 -bottom-6 -translate-x-1/2 animate-blink [animation-delay:1.8s]" />
 
           <div
             ref={tilt.ref}
@@ -123,7 +123,7 @@ export default function Hero() {
           ["#projects", "Projects"],
           ["#contact", "Contact"],
         ].map(([href, label]) => {
-          return (<a
+          return (
             
               key={href}
               href={href}
@@ -137,7 +137,7 @@ export default function Hero() {
 
       <div className="mt-[76px] flex flex-wrap gap-10 justify-center font-plex text-xs text-inkDim tracking-wide opacity-0 animate-fadeUp [animation-delay:.8s]">
         <span>
-          LOCATION <b className="text-ink font-medium">Colombo, Sri Lanka</b>
+          LOCATION <b className="text-ink font-medium">Anuradhapura, Sri Lanka</b>
         </span>
         <span>
           STATUS <b className="text-ink font-medium">Open to opportunities</b>
