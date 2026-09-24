@@ -123,7 +123,7 @@ export default function Hero() {
           ["#projects", "Projects"],
           ["#contact", "Contact"],
         ].map(([href, label]) => {
-          return (
+          return (<a
             
               key={href}
               href={href}
